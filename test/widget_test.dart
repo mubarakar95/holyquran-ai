@@ -18,7 +18,31 @@ import 'package:quran_easy_native/ui/settings/quran_dressing_screen.dart';
 
 class FakeLocalStorage extends Fake implements LocalStorageService {
   @override
+  double get arabicPlaybackRate => 1.0;
+  @override
+  set arabicPlaybackRate(double value) {}
+  @override
+  double get malayalamPlaybackRate => 1.0;
+  @override
+  set malayalamPlaybackRate(double value) {}
+  @override
+  String get repeatMode => 'none';
+  @override
+  set repeatMode(String value) {}
+  @override
+  bool get segmentedMode => true;
+  @override
+  set segmentedMode(bool value) {}
+  @override
   String get theme => 'light';
+  @override
+  String get reciterId => 'ar.alafasy';
+  @override
+  set reciterId(String value) {}
+  @override
+  String get audioMode => 'arabic';
+  @override
+  set audioMode(String value) {}
   @override
   int get arFontSize => 100;
   @override
@@ -65,7 +89,31 @@ class FakeLocalStorage extends Fake implements LocalStorageService {
 
 class FakeLocalStorageWBW extends Fake implements LocalStorageService {
   @override
+  double get arabicPlaybackRate => 1.0;
+  @override
+  set arabicPlaybackRate(double value) {}
+  @override
+  double get malayalamPlaybackRate => 1.0;
+  @override
+  set malayalamPlaybackRate(double value) {}
+  @override
+  String get repeatMode => 'none';
+  @override
+  set repeatMode(String value) {}
+  @override
+  bool get segmentedMode => true;
+  @override
+  set segmentedMode(bool value) {}
+  @override
   String get theme => 'light';
+  @override
+  String get reciterId => 'ar.alafasy';
+  @override
+  set reciterId(String value) {}
+  @override
+  String get audioMode => 'arabic';
+  @override
+  set audioMode(String value) {}
   @override
   int get arFontSize => 100;
   @override
@@ -111,6 +159,30 @@ class FakeLocalStorageWBW extends Fake implements LocalStorageService {
 }
 
 class FakeLocalStorageTwoPage extends Fake implements LocalStorageService {
+  @override
+  String get reciterId => 'ar.alafasy';
+  @override
+  set reciterId(String value) {}
+  @override
+  String get audioMode => 'arabic';
+  @override
+  set audioMode(String value) {}
+  @override
+  double get arabicPlaybackRate => 1.0;
+  @override
+  set arabicPlaybackRate(double value) {}
+  @override
+  double get malayalamPlaybackRate => 1.0;
+  @override
+  set malayalamPlaybackRate(double value) {}
+  @override
+  String get repeatMode => 'none';
+  @override
+  set repeatMode(String value) {}
+  @override
+  bool get segmentedMode => true;
+  @override
+  set segmentedMode(bool value) {}
   @override
   String get theme => 'light';
   @override
